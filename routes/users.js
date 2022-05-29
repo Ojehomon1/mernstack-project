@@ -1,15 +1,19 @@
 import express from "express";
-
+import { signup , login } from "../controllers/users.js";
 const router = express.Router();
 
 
-router.post("/login" ,(req, res)=>{
-    res.send("welcome to login page");
-});
+// router.post("/login" ,(req, res)=>{
+//     res.send("welcome to login page");
+// });
+router.post('/login',login);
+router.post('/signup',signup);
 
-router.post("/signup" ,(req, res)=>{
-    res.send("welcome to sign up page");
-});
+
+// router.post("/signup" ,(req, res)=>{
+//     res.send("welcome to sign up page");
+// });
+
 
 
 
