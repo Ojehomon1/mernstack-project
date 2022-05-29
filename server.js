@@ -17,7 +17,8 @@ mongoose.connect(process.env.MONGO_URI)
 .catch((err)=>{
     console.log(" we have an  error",err);
   
-})
+});
+app.use(express.json()); // to send post data 
 app.use("/users" , users);
 app.use("/posts" , posts);
 
