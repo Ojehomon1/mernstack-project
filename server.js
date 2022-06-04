@@ -10,7 +10,7 @@ const app = express();
 //   res.send("welcome to homepage");
 // })
 
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URI )
 .then(()=>{
   console.log(" connected to mongoDB 😎 ");
 })
